@@ -1,0 +1,149 @@
+@media screen and (max-width: 1200px) {
+  main .wedo__group .wedo__item p {
+    max-height: 120px;
+  }
+  main .wedo .img-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  main .wedo .img-wrapper img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main .about .img-cell {
+    height: 200px;
+    max-width: 300px;
+  }
+  main .archivement__item {
+    padding: 40px 0px;
+  }
+  main .archivement__item h2 {
+    font-size: 4rem;
+  }
+  main .archivement__item p {
+    font-size: 1rem;
+  }
+  main .design .img-wrapper .ipad {
+    max-width: 300px;
+  }
+  main .design .img-wrapper .iphone {
+    bottom: -45px;
+    left: 250px;
+    max-width: 125px;
+  }
+  footer .social .social-link {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .menu__item {
+    display: block !important;
+  }
+  .menu__item a {
+    border-bottom: none !important;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+  .menu__toggle {
+    display: block !important;
+  }
+  main section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  main .testimonial .slide-testimonial .slide-item .slide-content {
+    width: 100%;
+  }
+  main .testimonial .slide-testimonial .slide-item .slide-content p {
+    font-size: 1.3rem;
+  }
+  main .testimonial .slide-testimonial .slide-item .slide-image {
+    display: none;
+  }
+  main .about .img-cell {
+    height: 150px;
+  }
+  main .archivement__item {
+    padding: 20px 0px;
+  }
+  main .archivement__item h2 {
+    font-size: 2.5rem;
+  }
+  main .archivement__item p {
+    font-size: 0.8rem;
+  }
+  main .service .row .service__item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  main .service .row .service__item:nth-last-child(3) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  main .design .overlay {
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  main .wedo .img-wrapper .big-img {
+    max-width: 400px;
+  }
+  main .blog .container {
+    text-align: center;
+  }
+  main .blog .article {
+    max-width: 400px;
+    margin: 0px auto 25px auto;
+  }
+  main .blog .article__thumb {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .intro__text-small {
+    font-size: 3rem;
+  }
+  header .intro__text-big {
+    font-size: 4rem;
+    line-height: 2;
+  }
+  main .service .row .service__item:nth-last-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  main .design .img-wrapper .ipad {
+    max-width: 200px;
+  }
+  main .design .img-wrapper .iphone {
+    bottom: -30px;
+    left: 160px;
+    max-width: 85px;
+  }
+  main .work .img__group {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main .work .img__group .img__item.big {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / span 2;
+  }
+  main .team .member__image {
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
