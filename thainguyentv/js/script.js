@@ -1,3 +1,7 @@
+window.addEventListener('load', function(){
+
+
+
 class tab {
   constructor (tabId) {
       
@@ -93,3 +97,7 @@ $('.totop-btn').on('click',function(){
 function scrollToTop () {
   $('html, body').animate({scrollTop:0},500, 'swing', function(){console.log('to top');})
 }
+
+
+  
+})
