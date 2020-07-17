@@ -1,6 +1,7 @@
   $(window).load(function(){
     $(".scroll").mCustomScrollbar({
       theme:"dark",
+      autoDraggerLength: false,
     });
   
   });

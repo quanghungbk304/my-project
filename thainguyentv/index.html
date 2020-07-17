@@ -8,9 +8,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/scss/owl.carousel.min.css">
-  <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/scss/owl.theme.default.min.css">
   <link rel="stylesheet" href="./libs/mCustomScrollbar.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 
   <link rel="stylesheet" href="./css/style.css">
@@ -37,7 +37,7 @@
       </div>
     </section>
 
-    <section class="logo-bar">
+    <section id="home" class="logo-bar">
       <div class="wrapper grid-2">
         <div class="logo-group">
           <div class="logo-image"><img src="./img/0-header/logo.png" alt=""></div>
@@ -88,7 +88,7 @@
           </li>
           <li class="list-item"><a href="#">Tin tức thái nguyên</a>
           <div class="sub-menu">
-            <a href="">Nông thông mới</a>
+            <a href="">Nông thôn mới</a>
             <a href="">Chè việt</a>
           </div>
           </li>
@@ -179,7 +179,7 @@
             </a>
           </div>
 
-          <div class="megastory">
+          <div id="megastory" class="megastory">
             <h2>Ảnh  |  Infographic  |  Megastory</h2>
             <ul class="post-list">
               <li class="post">
@@ -259,132 +259,235 @@
           <div id="video-tab" class="video-tab">
             <div class="tabs-heading">
               <h3 class="tab1 tab-btn active">Video mới</h3>
-              <h3 class="tab2 tab-btn">video xem nhiều</h3>
-              <h3 class="tab3 tab-btn">video nổi bật</h3>
+              <h3 class="tab2 tab-btn ">video xem nhiều</h3>
+              <h3 class="tab3 tab-btn ">video nổi bật</h3>
             </div>
 
-            <!-- Tab Các video mới -->
             <div class="tabs-content">
+              
+              <!-- Tab Các video mới -->
               <div class="tab-content  show">
-                <ul class="post-list">
-                  <li class="post">
+                <ul id="video-new" class="post-list">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/2.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Cập nhật thông tin dịch bệnh COVID-19 ngày 29/3</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/3.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">5 bước khai báo sức khỏe toàn dân qua ứng dụng NCOV trên smartphone</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/4.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Hướng dẫn khử khuẩn tại gia đình theo hướng dẫn của Bộ Y tế</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/5.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">TP Thái Nguyên: Nhiều người dân vẫn chủ quan trong thời điểm “cách ly xã hội”</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/6.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Tinh thần chiến thắng 30/4 trong cuộc chiến chống đại dịch Covid-19</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/7.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Những hình ảnh ấn tượng trong phòng, chống dịch COVID-19</a>
                     </h3>
                   </li>
+
+
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/3.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">5 bước khai báo sức khỏe toàn dân qua ứng dụng NCOV trên smartphone</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/4.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Hướng dẫn khử khuẩn tại gia đình theo hướng dẫn của Bộ Y tế</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/5.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">TP Thái Nguyên: Nhiều người dân vẫn chủ quan trong thời điểm “cách ly xã hội”</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/6.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Tinh thần chiến thắng 30/4 trong cuộc chiến chống đại dịch Covid-19</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/7.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Những hình ảnh ấn tượng trong phòng, chống dịch COVID-19</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/2.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Cập nhật thông tin dịch bệnh COVID-19 ngày 29/3</a>
+                    </h3>
+                  </li>
+                  
+                  
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/4.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Hướng dẫn khử khuẩn tại gia đình theo hướng dẫn của Bộ Y tế</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/5.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">TP Thái Nguyên: Nhiều người dân vẫn chủ quan trong thời điểm “cách ly xã hội”</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/6.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Tinh thần chiến thắng 30/4 trong cuộc chiến chống đại dịch Covid-19</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/7.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Những hình ảnh ấn tượng trong phòng, chống dịch COVID-19</a>
+                    </h3>
+                  </li>
+                    <li class="post slide-item">
+                      <a class="post-thumb" href=""><img src="./img/3-aside/2.jpg" alt=""></a>
+                      <h3 class="post-title">
+                        <a href="">Cập nhật thông tin dịch bệnh COVID-19 ngày 29/3</a>
+                      </h3>
+                    </li>
+                    <li class="post slide-item">
+                      <a class="post-thumb" href=""><img src="./img/3-aside/3.jpg" alt=""></a>
+                      <h3 class="post-title">
+                        <a href="">5 bước khai báo sức khỏe toàn dân qua ứng dụng NCOV trên smartphone</a>
+                      </h3>
+                    </li>
                 </ul>
               </div>
 
+
               <!-- <h3>Các video xem nhiều</h3> -->
               <div class="tab-content">
-                <ul class="post-list">
-                  <li class="post">
+                <ul id="video-mostview"  class="post-list">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/4.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Hướng dẫn khử khuẩn tại gia đình theo hướng dẫn của Bộ Y tế</a>
                     </h3>
                   </li>
                   
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/6.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Tinh thần chiến thắng 30/4 trong cuộc chiến chống đại dịch Covid-19</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/7.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Những hình ảnh ấn tượng trong phòng, chống dịch COVID-19</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/5.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">TP Thái Nguyên: Nhiều người dân vẫn chủ quan trong thời điểm “cách ly xã hội”</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/2.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Cập nhật thông tin dịch bệnh COVID-19 ngày 29/3</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/3.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">5 bước khai báo sức khỏe toàn dân qua ứng dụng NCOV trên smartphone</a>
                     </h3>
                   </li>
                  
-                </ul>
-              </div>
 
-              <!-- <h3>Các video nổi bật</h3> -->
-              <div class="tab-content">
-                <ul class="post-list">
-                 
-                  <li class="post">
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/7.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Những hình ảnh ấn tượng trong phòng, chống dịch COVID-19</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/5.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">TP Thái Nguyên: Nhiều người dân vẫn chủ quan trong thời điểm “cách ly xã hội”</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/2.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">Cập nhật thông tin dịch bệnh COVID-19 ngày 29/3</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/3.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">5 bước khai báo sức khỏe toàn dân qua ứng dụng NCOV trên smartphone</a>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- <h3>Các video nổi bật</h3> -->
+              <div class="tab-content ">
+                <ul id="video-highlight" class="post-list">
+                 
+                  <li class="post slide-item">
+                    <a class="post-thumb" href=""><img src="./img/3-aside/5.jpg" alt=""></a>
+                    <h3 class="post-title">
+                      <a href="">TP Thái Nguyên: Nhiều người dân vẫn chủ quan trong thời điểm “cách ly xã hội”</a>
+                    </h3>
+                  </li>
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/6.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Tinh thần chiến thắng 30/4 trong cuộc chiến chống đại dịch Covid-19</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/2.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Cập nhật thông tin dịch bệnh COVID-19 ngày 29/3</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/3.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">5 bước khai báo sức khỏe toàn dân qua ứng dụng NCOV trên smartphone</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/4.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Hướng dẫn khử khuẩn tại gia đình theo hướng dẫn của Bộ Y tế</a>
                     </h3>
                   </li>
-                  <li class="post">
+                  <li class="post slide-item">
                     <a class="post-thumb" href=""><img src="./img/3-aside/7.jpg" alt=""></a>
                     <h3 class="post-title">
                       <a href="">Những hình ảnh ấn tượng trong phòng, chống dịch COVID-19</a>
@@ -393,9 +496,25 @@
                 </ul>
               </div>
             </div>
-            <!-- end video tabs -->
-
+            <!-- end tabs-content -->
           </div>
+          <!-- end video tabs -->
+        
+          <div class="banner-group">
+            <div class="banner-item">
+              <a href=""><img src="./img/3-aside/8.jpg" alt=""></a>
+            </div>
+            <div class="banner-item">
+              <a href=""><img src="./img/3-aside/11-attp.jpg" alt=""></a>
+            </div>
+            <div class="banner-item">
+              <a href=""><img src="./img/3-aside/9.jpg" alt=""></a>
+            </div>
+            <div class="banner-item">
+              <a href=""><img src="./img/3-aside/10.jpg" alt=""></a>
+            </div>
+          </div>
+        
         </div>
         <!-- End small-column -->
 
@@ -406,9 +525,328 @@
     <!-- end main-top section -->
 
 
-  </main>
+  <section class="video">
+    <div class="wrapper">
+      <div class="big-col">
+        <h2>Videos</h2>
+        <div class="post big-post">
+          <a class="post-thumb" href=""><img src="./img/4-video-section/1-big.jpg" alt=""></a>
+          <h3 class="post-title">
+            <a href="">Đồng chí Bí thư Tỉnh ủy làm việc với Ban Thường vụ Thành ủy Thái Nguyên</a>
+          </h3>
+          <p class="post-desc" href="#">
+            Đảng bộ huyện Võ Nhai cần nắm bắt thời cơ, phát huy nội lực ở mức cao nhất; đồng thời huy động và sử dụng có hiệu quả các nguồn lực từ bên ngoài để từng bước phát triển" - đó là chỉ đạo của đồng chí Nguyễn Thanh Hải, Ủy viên Ban Chấp hành Trung ương Đảng, Bí thư Tỉnh ủy Thái Nguyên tại buổi làm việc với Ban Thường vụ Huyện ủy Võ Nhai ngày 10/6. 
+          </p>
+        </div>
+      </div>
+      <div class="small-col">
+        <ul class="video-list scroll">
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/4-video-section/2.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Gà đồi Phú Bình - Khẳng định thương hiệu từ chất lượng</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/4-video-section/3.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Kiểm tra tiến độ dự án Trung tâm Thương mại Việt - Nhật</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/4-video-section/4.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Công bố bổ nhiệm Giám đốc Sở Tư pháp tỉnh Thái Nguyên</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/4-video-section/5.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Cho ý kiến vào các Đề án nhân sự Đại hội Đảng bộ tỉnh Thái Nguyên lần thứ XX</a>
+            </h3>
+          </li>
 
 
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/2-photo-section/2.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Việt Nam không ghi nhận thêm ca mắc COVID-19, bệnh nhân 91 đã có thể ngồi dậy</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/2-photo-section/3.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Google, Apple phát hành hệ thống theo dõi tiếp xúc COVID-19</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/2-photo-section/4.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Lực lượng an ninh Afghanistan chặn đứng cuộc tấn công của Taliban</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/2-photo-section/5.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Dấu ấn của Việt Nam trên trường quốc tế năm 2018</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/2-photo-section/6.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Phó Giám đốc Ngân hàng, kiểm lâm, giáo viên quậy tưng trong bữa tiệc ma túy</a>
+            </h3>
+          </li>
+          <li class="post">
+            <a class="post-thumb" href=""><img src="./img/2-photo-section/7.jpg" alt=""></a>
+            <h3 class="post-title">
+              <a href="">Paris của Pháp tiếp tục hỗn loạn trong đợt biểu tình thứ 4</a>
+            </h3>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+<!-- end video section -->
+
+<section class="mid-banner">
+  <div class="wrapper">
+    <div >
+      <a href=""><img src="./img/5-mid-banner/mid-banner.jpg" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <div class="wrapper">
+    <ul class="post-list">
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/1.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Hội nghị lần thứ 102, Ban Thường vụ Thành ủy Thái Nguyên, nhiệm kỳ 2015 - 2020</a>
+          </h3>
+          <p class="post-desc"><a href="">Ngày 12/6, đồng chí Đoàn Thị Hảo, Ủy viên Ban Thường vụ Tỉnh ủy, Bí thư Thành ủy đã chủ trì Hội nghị Ban Thường vụ Thành ủy Thái Nguyên lần thứ 102, khóa XVII, nhiệm kỳ 2015 - 2020 để nghe và cho ý kiến</a> </p>
+        </div>
+        <div class="post-category"><a href="">VIỆT NAM</a></div>
+      </li>
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/2.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Đại hội Đại biểu Đảng bộ Quân sự tỉnh Thái Nguyên lần thứ XX, nhiệm kỳ 2020-2025</a>
+          </h3>
+          <p class="post-desc"><a href="">Ngày 12/6, Đảng bộ Quân sự tỉnh Thái Nguyên long trọng tổ chức Đại hội Đại biểu lần thứ XX, nhiệm kỳ 2020-2025. Dự Đại hội có Thiếu tướng Trần Quốc</a></p>
+        </div>
+        <div class="post-category"><a href="">VIỆT NAM</a></div>
+      </li>
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/3.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Huyện Phú Bình: Chương trình Chợ nhân đạo 'Chung tay vì sức khỏe cộng đồng</a>
+          </h3>
+          <p class="post-desc">Nằm trong chuỗi hoạt động của Tháng nhân đạo năm 2020 “Chung tay vì sức khỏe cộng đồng”, chia sẻ cùng các gia đình có hoàn cảnh đặc biệt khó khăn, các hộ nghèo và các hộ bị ảnh hưởng do thiên tai, dịch bệnh Covid-19<a href=""></a></p>
+        </div>
+        <div class="post-category"><a href="">VIỆT NAM</a></div>
+      </li>
+      <li class="post grid-col-1-3">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/4.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Hội nghị lần thứ 102, Ban Thường vụ Thành ủy Thái Nguyên, nhiệm kỳ 2015 - 2020</a>
+          </h3>
+          <p class="post-desc">Ngày 12/6, đồng chí Đoàn Thị Hảo, Ủy viên Ban Thường vụ Tỉnh ủy, Bí thư Thành ủy đã chủ trì Hội nghị Ban Thường vụ Thành ủy Thái Nguyên lần thứ 102, khóa XVII, nhiệm kỳ 2015 - 2020 để nghe và cho ý kiến<a href=""></a></p>
+        </div>
+        <div class="post-category"><a href="">VIỆT NAM</a></div>
+      </li>
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/5.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Tổng thống Trump lùi ngày tổ chức vận động tranh cử ở Oklahoma</a>
+          </h3>
+          <p class="post-desc"><a href="">Ông Trump lùi thời điểm tổ chức vận động tranh cử ở Oklahoma dự kiến vào 19/6 - (ngày Juneteenth) ngày tự do của người Mỹ gốc Phi, sang 20/6 vì tôn trọng ngày kỷ niệm chấm dứt chế độ nô lệ ở Texas.</a></p>
+        </div>
+        <div class="post-category"><a href="">THẾ GIỚI</a></div>
+      </li>
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/6.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Thủ tướng Đức Angela Merkel bảo vệ gói kích cầu 130 tỷ euro</a>
+          </h3>
+          <p class="post-desc"><a href="">Theo nhà lãnh đạo Đức, trong bối cảnh hiện nay, nhà nước cần phải làm nhiều hơn và việc thông qua gói kích cầu 130 tỷ euro là nền tảng tốt để đưa nước Đức vượt qua khủng hoảng.</a></p>
+        </div>
+        <div class="post-category"><a href="">THẾ GIỚI</a></div>
+      </li>
+      <li class="post grid-col-2-4">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/7.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Lực lượng an ninh Afghanistan chặn đứng cuộc tấn công của Taliban</a>
+          </h3>
+          <p class="post-desc"><a href="">12 tay súng Taliban đã bị tiêu diệt sau khi các lực lượng an ninh chặn đứng cuộc tấn công của nhóm phiến quân này nhằm vào huyện Farkhar, thuộc tỉnh Takhar, miền Bắc Afghanistan.</a></p>
+        </div>
+        <div class="post-category"><a href="">THẾ GIỚI</a></div>
+      </li>
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/8.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Điểm sự kiện từ ngày 01/6/2020 đến ngày 07/6/2020</a>
+          </h3>
+          <p class="post-desc">Ngày 12/6, đồng chí Đoàn Thị Hảo, Ủy viên Ban Thường vụ Tỉnh ủy, Bí thư Thành ủy đã chủ trì Hội nghị Ban Thường vụ Thành ủy Thái Nguyên lần thứ 102, khóa XVII, nhiệm kỳ 2015 - 2020 để nghe và cho ý kiến<a href=""></a></p>
+        </div>
+        <div class="post-category"><a href="">VIỆT NAM</a></div>
+      </li>
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/9.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Bầu chức danh Chủ tịch và Phó Chủ tịch UBND Thành phố Sông Công</a>
+          </h3>
+          <p class="post-desc"><a href="">Ngày 12/6, Đảng bộ Quân sự tỉnh Thái Nguyên long trọng tổ chức Đại hội Đại biểu lần thứ XX, nhiệm kỳ 2020-2025. Dự Đại hội có Thiếu tướng Trần Quốc</a></p>
+        </div>
+        <div class="post-category"><a href="">VIỆT NAM</a></div>
+      </li>
+      <li class="post">
+        <a class="post-thumb" href=""><img src="./img/6-main-cat-post/10.jpg" alt=""></a>
+        <div class="post-text">
+          <h3 class="post-title">
+            <a href="">Thái Nguyên thiệt hại gần 4 tỷ đồng do mưa bão</a>
+          </h3>
+          <p class="post-desc">Nằm trong chuỗi hoạt động của Tháng nhân đạo năm 2020 “Chung tay vì sức khỏe cộng đồng”, chia sẻ cùng các gia đình có hoàn cảnh đặc biệt khó khăn, các hộ nghèo và các hộ bị ảnh hưởng do thiên tai, dịch bệnh Covid-19<a href=""></a></p>
+        </div>
+        <div class="post-category"><a href="">VIỆT NAM</a></div>
+      </li>
+    </ul>
+    <!-- end post-list -->
+    <div class="view-more">
+      <a href="">XEM THÊM</a>
+    </div>
+  </div>
+</section>
+<!-- end category section -->
+
+<section class="bottom-banner">
+  <div class="wrapper">
+    <ul id="slide-banner1" class="banner-group">
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/1.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/2.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/3.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/4.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/1.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/2.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/3.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/4.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/1.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/2.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/3.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/4.jpg" alt=""></a>
+      </li>
+    </ul>
+
+    <ul id="slide-banner2" class="banner-group">
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/1.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/2.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/3.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/4.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/1.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/2.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/3.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/4.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/1.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/2.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/3.jpg" alt=""></a>
+      </li>
+      <li class="banner-item">
+      <a href=""><img src="./img/7-bottom-section/4.jpg" alt=""></a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <section class="nav-bar">
+    <div class="wrapper">
+      <ul class="list-group">
+        <li class="list-item"><a href="#">VỀ ĐÀI PTTH thái nguyên</a></li>
+        <li class="list-item"><a href="#">CƠ CẤU TỔ CHỨC</a></li>
+        <li class="list-item"><a href="#">QUẢNG CÁO</a></li>
+        <li class="list-item"><a href="#">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="site-info">
+    <div class="wrapper">
+      <h3>BẢN QUYỀN &copy; 2008 - 2016 BỞI ĐÀI PHÁT THANH - TRUYỀN HÌNH TỈNH THÁI NGUYÊN.</h3>
+      <p>Giám đốc - Tổng Biên tập - Chịu trách nhiệm nội dung: Nguyễn Thị Vũ Anh <br>
+        Giấy phép hoạt động số: 24/GP - TTĐT, do Cục Phát thanh, Truyền hình và Thông tin điện tử cấp ngày 01/04/2015 <br>
+        Giấy phép sửa đổi bổ sung số: 198/GPSĐBS - TTĐT, ngày 11/11/2016 của Cục Phát thanh, Truyền hình và Thông tin điện tử <br>
+        Địa chỉ: Số 226 Đường Bến Oánh - Phường Trưng Vương - TP.Thái Nguyên <br>
+        Điện thoại: <a href="tel:(02083) 855.439 ">(02083) 855.439 </a> * FAX: (02083) 655.724. <br>
+        Email: <a href="mail:daiptth@thainguyen.gov.vn">daiptth@thainguyen.gov.vn</a>;<a href="mail:baodientutntv@thainguyen.gov.vn">baodientutntv@thainguyen.gov.vn</a> <br>
+        Website: <a href="http://www.thainguyentv.vn">http://www.thainguyentv.vn</a> </p>
+    </div>
+  </section>
+
+  <section id="MasterCMS" class="product">
+    <div class="wrapper">
+      <h3><a href="http://mastercms.org" target="_blank">Based on MasterCMS Ultimate Edition v2.6 2016</a></h3>
+    </div>
+  </section>
+
+  <span class="totop-btn active" href="#home"><img src="./img/8-button/to-top.png" alt=""></span>
+</footer>
 
 
 
@@ -416,6 +854,7 @@
 
 
 <script src="./libs/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
 <script src="./libs/mCustomScrollbar.js"></script>
 <script src="./js/script.js"></script>
