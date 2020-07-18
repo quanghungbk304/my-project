@@ -1,32 +1,40 @@
 document.addEventListener('DOMContentLoaded', function(){
   
+  //show ngày giờ hiện tại
   setInterval(function(){
     var today = new Date();
     var days = ["Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"];
     var day = days[today.getDay()]
     var now = moment();
-    var dateTime = day + now.format(' DD/MM/YYYY, hh:mm:ss');;
+    var dateTime = day + now.format(': DD/MM/YYYY HH:mm:ss');;
     document.getElementById("cur-date").innerHTML = dateTime;
   },1000);
 
-  class tab {
-    constructor (tabId) {
-      var tab = document.getElementById(tabId);
+  //tạo các tab
+  function tab (tabId) {
+    var tab = document.getElementById(tabId);
       var tittles = tab.children[0].children;
       var contents = tab.children[1].children;
-      for (let i = 0; i < tittles.length; i++) {
-        tittles[i].onclick = ()=>{
-          for (let j = 0; j < contents.length; j++) {
+      for (var i = 0; i < tittles.length; i++) {
+        tittles[i].onclick = function(){
+          console.log(tittles);
+          console.log(this);
+          var current;
+          for (var id = 0; id < tittles.length; id ++ ) {
+            if (tittles[id] == this) {
+              current = id;
+            }
+          }
+          console.log(current);
+          for (var j = 0; j < contents.length; j++) {
             tittles[j].classList.remove('active');
             contents[j].classList.remove('show');
           }
-          tittles[i].classList.add('active')
-          contents[i].classList.add('show');
+          console.log(current);
+          tittles[current].classList.add('active')
+          contents[current].classList.add('show');
         } 
-        
       } 
-      
-    }
   }
   
   var tab1 = new tab('tv-tab');

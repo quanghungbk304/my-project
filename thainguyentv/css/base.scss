@@ -1,3 +1,60 @@
+
+// @mixin grid-1 ($width:1fr, $row-gap:auto, $col-gap:auto){
+//   display: grid;
+//   grid-template-columns: $width;
+//   grid-gap: $row-gap $col-gap;
+
+// }
+// @mixin grid-2 ($w1:1fr, $w2:1fr, $row-gap:auto, $col-gap:auto){
+//   display: grid;
+//   grid-template-columns: $w1 $w2;
+//   grid-gap: $row-gap $col-gap;
+// }
+// @mixin grid-3 ($w1:1fr, $w2:1fr, $w3:1fr, $row-gap:auto, $col-gap:auto){
+//   display: grid;
+//   grid-template-columns: $w1 $w2 $w3;
+//   grid-gap: $row-gap $col-gap;
+// }
+// @mixin grid-4 ($w1:1fr, $w2:1fr, $w3:1fr, $w4:1fr){
+//   display: grid;
+//   grid-template-columns: $w1 $w2 $w3 $w4;
+// }
+// @mixin grid-5 ($w1:1fr, $w2:1fr, $w3:1fr, $w4:1fr, $w5:1fr){
+//   display: grid;
+//   grid-template-columns: $w1 $w2 $w3 $w4 $w5;
+// }
+// @mixin grid-6 ($w1:1fr, $w2:1fr, $w3:1fr, $w4:1fr, $w5:1fr, $w6:1fr){
+//   display: grid;
+//   grid-template-columns: $w1 $w2 $w3 $w4 $w5 $w6;
+// }
+// .grid-1 {
+//   @include grid-1(1fr) ;
+// }
+// .grid-2 {
+//   @include grid-2(1fr,1fr) ;
+// }
+// .grid-3 {
+//   @include grid-3(1fr,1fr,1fr) ;
+// }
+// .grid-4 {
+//   @include grid-4(1fr,1fr,1fr,1fr) ;
+// }
+// .grid-5 {
+//   @include grid-5(1fr,1fr,1fr,1fr,1fr) ;
+// }
+// .grid-6 {
+//   @include grid-6(1fr,1fr,1fr,1fr,1fr,1fr) ;
+// }
+
+// .grid-col-1-3 {
+//   grid-column: 1 / 3;
+// }
+
+// .grid-col-2-4 {
+//   grid-column: 2 / 4;
+// }
+
+
 *, *:after, *:before{
   padding: 0px;
   margin: 0px;
@@ -16,61 +73,6 @@ html {
   font-family: Roboto, Arial, Helvetica, sans-serif ,'Segoe UI', Tahoma, Geneva, Verdana;
 }
 
-@mixin grid-1 ($width:1fr, $row-gap:auto, $col-gap:auto){
-  display: grid;
-  grid-template-columns: $width;
-  grid-gap: $row-gap $col-gap;
-
-}
-@mixin grid-2 ($w1:1fr, $w2:1fr, $row-gap:auto, $col-gap:auto){
-  display: grid;
-  grid-template-columns: $w1 $w2;
-  grid-gap: $row-gap $col-gap;
-}
-@mixin grid-3 ($w1:1fr, $w2:1fr, $w3:1fr, $row-gap:auto, $col-gap:auto){
-  display: grid;
-  grid-template-columns: $w1 $w2 $w3;
-  grid-gap: $row-gap $col-gap;
-}
-@mixin grid-4 ($w1:1fr, $w2:1fr, $w3:1fr, $w4:1fr){
-  display: grid;
-  grid-template-columns: $w1 $w2 $w3 $w4;
-}
-@mixin grid-5 ($w1:1fr, $w2:1fr, $w3:1fr, $w4:1fr, $w5:1fr){
-  display: grid;
-  grid-template-columns: $w1 $w2 $w3 $w4 $w5;
-}
-@mixin grid-6 ($w1:1fr, $w2:1fr, $w3:1fr, $w4:1fr, $w5:1fr, $w6:1fr){
-  display: grid;
-  grid-template-columns: $w1 $w2 $w3 $w4 $w5 $w6;
-}
-.grid-1 {
-  @include grid-1(1fr) ;
-}
-.grid-2 {
-  @include grid-2(1fr,1fr) ;
-}
-.grid-3 {
-  @include grid-3(1fr,1fr,1fr) ;
-}
-.grid-4 {
-  @include grid-4(1fr,1fr,1fr,1fr) ;
-}
-.grid-5 {
-  @include grid-5(1fr,1fr,1fr,1fr,1fr) ;
-}
-.grid-6 {
-  @include grid-6(1fr,1fr,1fr,1fr,1fr,1fr) ;
-}
-
-.grid-col-1-3 {
-  grid-column: 1 / 3;
-}
-
-.grid-col-2-4 {
-  grid-column: 2 / 4;
-}
-
 
 $color-grey: #666666;
 $color-black: #000000;
@@ -78,15 +80,10 @@ $color-white: #ffffff;
 $color-section-title: #292929;
 $color-logo-bar-background: #008944;
 
-.wrapper {
-  max-width: 1131px;
-  min-width: 950px;
-  width: 1131px;
-  margin: auto;
-}
+
 
 p, a, .title{
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 a:hover {
@@ -95,7 +92,9 @@ a:hover {
 
 img {
   width: 100%;
-  // max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .show {
@@ -106,3 +105,4 @@ img {
   opacity: 0;
   visibility: hidden;
 }
+
