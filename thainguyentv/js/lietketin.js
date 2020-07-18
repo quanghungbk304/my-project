@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function(){
+
+  setInterval(function(){
+    var today = new Date();
+    var days = ["Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"];
+    var day = days[today.getDay()]
+    var now = moment();
+    var dateTime = day + now.format(' DD/MM/YYYY, hh:mm:ss');;
+    document.getElementById("cur-date").innerHTML = dateTime;
+  },1000);
 
 $('#slide-banner1').slick({
   rows: 1,
@@ -19,10 +29,9 @@ $('#slide-banner2').slick({
   slidesToScroll: 4,
 });
 
-
 //scroll to top
 $(window).on('scroll',function(){
-  if ($(window).scrollTop() > $('#megastory').offset().top) {
+  if ($(window).scrollTop() > $('#home').offset().top) {
     $('.totop-btn').addClass('active');
   }
   else {
@@ -37,3 +46,5 @@ $('.totop-btn').on('click',function(){
 function scrollToTop () {
   $('html, body').animate({scrollTop:0},500, 'swing', function(){console.log('to top');})
 }
+
+})

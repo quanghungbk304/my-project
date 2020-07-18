@@ -659,7 +659,7 @@ main .main-top .wrapper .small-col .video-tab .tabs-content .tab-content ul.slic
   height: 5px;
   font-size: 0px;
   border: none;
-  background-color: gray;
+  background-color: #cccccc;
   margin-right: 3px;
   outline: none;
   cursor: pointer;
@@ -794,8 +794,11 @@ main .category .wrapper .post-list .post .post-thumb {
 }
 
 main .category .wrapper .post-list .post .post-thumb img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
   border-radius: 5px;
 }
 
@@ -877,9 +880,8 @@ main .bottom-banner .wrapper .banner-group .banner-item a {
 }
 
 main .bottom-banner .wrapper .banner-group .banner-item a img {
-  max-height: 100%;
   height: 80px;
-  display: block;
+  width: 100%;
 }
 
 main .bottom-banner .wrapper .banner-group .slick-dots {
@@ -897,7 +899,7 @@ main .bottom-banner .wrapper .banner-group .slick-dots button {
   margin-top: 15px;
   font-size: 0px;
   border: none;
-  background-color: gray;
+  background-color: #cccccc;
   margin-right: 3px;
   outline: none;
   cursor: pointer;
