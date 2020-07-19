@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById("cur-date").innerHTML = dateTime;
   },1000);
 
+//clone post đầu tiên của video list 
+
+
+
+
   //tạo các tab
   function tab (tabId) {
     var tab = document.getElementById(tabId);
@@ -33,6 +38,41 @@ document.addEventListener('DOMContentLoaded', function(){
           console.log(current);
           tittles[current].classList.add('active')
           contents[current].classList.add('show');
+          if (current == 1) {
+            $('#video-mostview').slick({
+              rows: 2,
+              dots: true,
+              arrows: false,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            });
+            
+          } else if (current ==2) {
+            $('#video-highlight').slick({
+              rows: 2,
+              dots: true,
+              arrows: false,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            });
+            
+          } else {
+              
+            $('#video-new').slick({
+              rows: 2,
+              dots: true,
+              arrows: false,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            });
+            
+          }
         } 
       } 
   }
@@ -52,26 +92,26 @@ document.addEventListener('DOMContentLoaded', function(){
   });
   
   
-  $('#video-mostview').slick({
-    rows: 2,
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  });
+  // $('#video-mostview').slick({
+  //   rows: 2,
+  //   dots: true,
+  //   arrows: false,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 3,
+  // });
   
   
-  $('#video-highlight').slick({
-    rows: 2,
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  });
+  // $('#video-highlight').slick({
+  //   rows: 2,
+  //   dots: true,
+  //   arrows: false,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 3,
+  // });
   
   $('#slide-banner1').slick({
     rows: 1,
