@@ -1,8 +1,33 @@
 @import 'base.scss';
 
-$color-primary: #004e27;
+
+html, body, main {
+  width: 100%;
+}
+
+.wrapper {
+  width: 1130px;
+  margin: auto; 
+}
+
+.big-col {
+  width: 695px;
+}
+.small-col {
+  width: 420px;
+
+}
+
+.all-tabs-content > div {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+
 
 header {
+  width: 100%;
   margin-bottom: 15px;
   .info-bar {
     div {
@@ -67,14 +92,16 @@ header {
     }
   
   }
-
+  
   .logo-bar{
     height: 80px;
+    width: 100%;
     background-image: url('../img/0-header/background.png');
     background-size: cover;
     background-color: #008944;
-    color: white;
     .wrapper {
+      color: white;
+      background-color: transparent;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -96,7 +123,7 @@ header {
           font-size: 1.4rem;
         }
       }
-
+      
       .social {
         .languages {
           text-align: right;
@@ -107,7 +134,7 @@ header {
           .separator {
             margin: 0px 10px;
           }
-
+          
         }
         .social-link {
           display: flex;
@@ -119,7 +146,7 @@ header {
             i {
               font-size: 2.2rem;
               &:hover {
-                color: $color-primary;
+                color: #004e27;
               }
               img {
                 width: auto;
@@ -136,6 +163,10 @@ header {
   }
 
   .nav-bar {
+    height: 37px;
+    width: 100%;
+    background-color: #004e27;
+    .wrapper{
       height: 37px;
       background-color: #004e27;
       .list-group {
@@ -223,6 +254,7 @@ header {
           }
         }
       }
+    }
   }
 
   .ticker-bar {
@@ -256,45 +288,6 @@ header {
  
 }
 
-$wrapper-width: 1130px;
-$gap: 15px;
-$gap-sm: 10px;
-$col-sm: 420px;
-$col-big: 695px;
-
-html, body, main {
-  width: 100%;
-}
-
-.wrapper {
-  width: 1130px;
-  margin: auto; 
-}
-
-.big-col {
-  width: 695px;
-}
-.small-col {
-  width: 420px;
-
-}
-
-.all-tabs-content > div {
-  display: none;
-}
-.show {
-  display: block !important;
-}
-
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@mixin float-lt($col:2, $gap:0) {
-  float:left;
-  width: calc((100% - ($col - 1) * $gap) / $col);
-}
 
 
 main {
