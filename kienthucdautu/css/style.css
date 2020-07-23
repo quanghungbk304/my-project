@@ -129,6 +129,10 @@ html {
   font-family: Myriad, Roboto, sans-serif ,'Segoe UI';
 }
 
+a {
+  color: inherit;
+}
+
 a:visited {
   color: inherit;
 }
@@ -511,9 +515,10 @@ header .nav-bar .list-group .list-item .sub-menu {
   display: none;
   position: absolute;
   width: 200px;
-  top: calc(100% + 1px);
+  top: calc(100%);
   background-color: #f1f1f1;
   z-index: 2;
+  border-top: 1px solid #d9d9d9;
 }
 
 header .nav-bar .list-group .list-item .sub-menu .sub-item {
