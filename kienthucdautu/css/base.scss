@@ -1,0 +1,298 @@
+
+//Color
+$color-main: #f7941d;
+$color-menu: #f1f1f1; //background menu, 
+$color-bt: #f7941d; //border top, menu constrast
+$color-mobile-menu: #f7941d;
+$color-bb: #e77817; //border bottom (heading), icon
+$color-icon: #e77817;
+$color-title: #000000;
+$color-text: #999999;
+$color-ahover: #4386c3;
+$color-background: #f2f2f2;
+$color-background-info-bar: #f9f9f9;
+
+*, *:after, *:before{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.clearfix::after{
+  content: '';
+  display: block;
+  height: 0;
+  width: 100%;
+  clear: both;
+}
+
+.rt {float: right;}
+.lt {float: left;}
+
+.m10 {margin: 10px}
+.mt10 {margin-top: 10px}
+.mr10 {margin-right: 10px}
+.mb10 {margin-bottom: 10px}
+.ml10 {margin-left: 10px}
+
+.m15 {margin: 15px}
+.mt15 {margin-top: 15px}
+.mr15 {margin-right: 15px}
+.mb15 {margin-bottom: 15px}
+.ml15 {margin-left: 15px}
+
+.m20 {margin: 20px}
+.mt20 {margin-top: 20px}
+.mr20 {margin-right: 20px}
+.mb20 {margin-bottom: 20px}
+.ml20 {margin-left: 20px}
+
+.m30 {margin: 30px}
+.mt30 {margin-top: 30px}
+.mr30 {margin-right: 30px}
+.mb30 {margin-bottom: 30px}
+.ml30 {margin-left: 30px}
+
+html {
+  // font-size: 62.5%;
+  font-family: Roboto,'Segoe UI',  sans-serif;
+}
+
+@font-face {
+  font-family: Myriad;
+  src: url('../fonts/myriad-pro-regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Myriad;
+  src: url('../fonts/myriad-pro-bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Myriad;
+  src: url('../fonts/myriad-pro-light.otf');
+  font-weight: lighter;
+}
+
+.font-myriad {
+    font-family: Myriad, Roboto, sans-serif ,'Segoe UI';
+}
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: $color-ahover;
+}
+
+p, a {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border: none;
+  display: block;
+}
+
+.show {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+h2 {
+  color: $color-title;
+}
+
+.col-lt {
+  width: 810px;
+  float: left;
+}
+
+.col-rt {
+  width: 300px;
+  float: right;
+}
+
+.w495 {
+  width: 495px;
+}
+
+.w300 {
+  width: 300px;
+}
+
+
+//chia cột phần top-cover trang tin liệt kê
+.w560 {
+  width: 560px;
+}
+.w230 {
+  width: 230px;
+}
+
+
+.article {
+  float: left;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px dotted #c8c8c8;
+  &:last-child {
+    border-bottom: none;
+  }
+  .article-image {
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 56.25%;
+    }
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .article-info {
+    float: left;
+    .article-title {
+      margin-bottom: 10px;
+    }
+    .article-desc {
+      margin-bottom: 10px;
+      display: none;
+    }
+    .article-detail {
+      display: none;
+      margin-bottom: 10px;
+    }
+    .article-link {
+      margin-bottom: 10px;
+      li {
+        list-style: inside;
+        color: #c2c2c2;
+        a {
+          color: black;
+        }
+        a:hover {
+          color: $color-ahover;
+        }
+      }
+    }
+    .article-meta {
+      display: none;
+      a, p, span {
+        font-size: 12px;
+      }
+    }
+  }
+ 
+}
+
+.article-list {
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    clear: both;
+  }
+}
+
+
+.fr169 {
+  .article {
+    .article-image {
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 56.25%;
+      }
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.fr43 {
+  .article {
+    .article-image {
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 75%;
+      }
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.fr11 {
+  .article {
+    .article-image {
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

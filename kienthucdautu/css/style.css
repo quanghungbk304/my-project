@@ -223,6 +223,22 @@ h2 {
 .article .article-image {
   float: left;
   margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.article .article-image::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+.article .article-image a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .article .article-info {
@@ -479,6 +495,10 @@ header .nav-bar .list-group li:hover {
   background-color: rgba(0, 0, 0, 0.06);
 }
 
+header .nav-bar .list-group .list-item.active {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
 header .nav-bar .list-group .list-item {
   float: left;
   color: black;
@@ -589,8 +609,13 @@ main .cat-top .article:first-child .article-image a {
   display: block;
 }
 
+main .cat-top .article:first-child .article-image::before {
+  padding-top: 75%;
+}
+
 main .cat-top .article:first-child .article-info {
   width: 310px;
+  padding: 20px 20px 20px 0px;
 }
 
 main .cat-top .article:first-child .article-info .article-title a {
@@ -615,6 +640,10 @@ main .cat-top .article {
   margin-top: 0px;
 }
 
+main .cat-top .article .article-image {
+  width: 100%;
+}
+
 main .cat-top .article .article-desc {
   display: none;
 }
@@ -635,6 +664,7 @@ main .cat-heading h2 {
   display: inline-block;
   padding-right: 20px;
   padding-bottom: 3px;
+  font-size: 26px;
   border-bottom: 1px solid #e77817;
 }
 
@@ -649,11 +679,11 @@ main .cat-group .article-list .article {
 
 main .cat-group .article-list .article .article-image {
   width: 165px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 main .cat-group .article-list .article .article-info {
-  width: 320px;
+  width: 315px;
 }
 
 main .cat-group .article-list .article .article-info .article-desc {
@@ -680,6 +710,10 @@ main .cat-group .cat-focus .article:first-child .article-image {
   width: 100%;
 }
 
+main .cat-group .cat-focus .article:first-child .article-image::before {
+  padding-top: 56.25%;
+}
+
 main .cat-group .cat-focus .article:first-child .article-info {
   width: 100%;
 }
@@ -703,6 +737,10 @@ main .cat-group .cat-investment .article .article-desc {
 main .cat-group .cat-investment .article:first-child .article-image {
   display: block;
   width: 100%;
+}
+
+main .cat-group .cat-investment .article:first-child .article-image::before {
+  padding-top: 56.25%;
 }
 
 main .cat-group .cat-investment .article:first-child .article-info {
@@ -738,6 +776,11 @@ main .cat-expert .article-list .article:first-child {
 
 main .cat-expert .article-list .article:first-child .article-image {
   display: block;
+  width: 100%;
+}
+
+main .cat-expert .article-list .article:first-child .article-image::before {
+  padding-top: 70%;
 }
 
 main .cat-expert .article-list .article:first-child .article-title {
@@ -769,6 +812,14 @@ main .cat-expert .article-list .article:first-child, main .cat-expert .article-l
 main .cat-money, main .cat-startup {
   width: 395px;
   margin-bottom: 25px;
+}
+
+main .cat-money .cat-heading, main .cat-startup .cat-heading {
+  text-transform: uppercase;
+}
+
+main .cat-money .cat-heading h2, main .cat-startup .cat-heading h2 {
+  font-size: 18px;
 }
 
 main .cat-money .article-list, main .cat-startup .article-list {
@@ -808,11 +859,19 @@ main .cat-money .article:first-child .article-desc, main .cat-startup .article:f
 main .cat-mostview .article-list .article .article-image {
   width: 70px;
   height: 70px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 main .cat-mostview .article-list .article .article-info {
   width: 210px;
+}
+
+main .cat-ma .article:first-child .article-image {
+  width: 100%;
+}
+
+main .cat-ma .article:first-child .article-title a {
+  font-size: 18px;
 }
 
 main .cat-ma .article-info .article-desc {
@@ -926,8 +985,7 @@ footer .mastercms a {
 }
 
 .w560 .top-cover .article-list .article .article-image {
-  height: 120px;
-  height: 98px;
+  width: 100%;
   display: block;
 }
 
@@ -954,7 +1012,7 @@ footer .mastercms a {
 }
 
 .w230 .relate-article .article-list .article .article-image {
-  height: 130px;
+  width: 100%;
   display: none;
 }
 
