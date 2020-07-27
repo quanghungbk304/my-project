@@ -138,7 +138,7 @@ a:visited {
 }
 
 a:hover {
-  color: #4386c3;
+  color: #0079e2;
 }
 
 p, a {
@@ -180,7 +180,7 @@ img {
 }
 
 h2 {
-  color: #000000;
+  color: #7d7554;
 }
 
 .col-lt {
@@ -199,6 +199,14 @@ h2 {
 
 .w300 {
   width: 300px;
+}
+
+.w165 {
+  width: 165px;
+}
+
+.w630 {
+  width: 630px;
 }
 
 .w560 {
@@ -273,7 +281,7 @@ h2 {
 }
 
 .article .article-info .article-link li a:hover {
-  color: #4386c3;
+  color: #0079e2;
 }
 
 .article .article-info .article-meta {
@@ -349,6 +357,10 @@ h2 {
   right: 0;
 }
 
+.banner-item {
+  margin-bottom: 20px;
+}
+
 html, body {
   min-width: 1200px;
 }
@@ -391,7 +403,7 @@ header .info-bar p span {
 }
 
 header .info-bar p i {
-  color: #e77817;
+  color: #7d7554;
   padding-right: 3px;
 }
 
@@ -421,22 +433,20 @@ header .info-bar .links a {
 }
 
 header .info-bar .links a:hover {
-  color: #4386c3;
+  color: #0079e2;
 }
 
 header .logo-bar {
-  height: 107px;
+  height: 86px;
 }
 
 header .logo-bar .wrapper {
-  border-bottom: 5px solid #e77817;
   padding-bottom: 15px;
 }
 
 header .logo-bar .wrapper .logo {
-  width: 159px;
-  height: 81px;
-  margin-top: 8px;
+  width: 300px;
+  margin-top: 20px;
 }
 
 header .logo-bar .wrapper .search {
@@ -454,6 +464,7 @@ header .logo-bar .wrapper .search {
   background-color: #f2f2f2;
   padding: 10px;
   border-radius: 19px;
+  margin-top: 24px;
 }
 
 header .logo-bar .wrapper .search .search-text {
@@ -488,20 +499,20 @@ header .nav-bar .list-group {
   line-height: 38px;
   height: 38px;
   border-bottom: 1px solid #d9d9d9;
-  background-color: #f1f1f1;
+  background-color: #7d7554;
 }
 
 header .nav-bar .list-group li:hover {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 header .nav-bar .list-group .list-item.active {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 header .nav-bar .list-group .list-item {
   float: left;
-  color: black;
+  color: white;
   text-transform: uppercase;
   height: 100%;
   position: relative;
@@ -515,6 +526,10 @@ header .nav-bar .list-group .list-item a {
   padding: 0px 15px;
   font-size: 12px;
   font-weight: bold;
+}
+
+header .nav-bar .list-group .list-item a:hover {
+  color: white;
 }
 
 header .nav-bar .list-group .list-item:not(:nth-last-child(-n+2))::after {
@@ -536,13 +551,12 @@ header .nav-bar .list-group .list-item .sub-menu {
   position: absolute;
   width: 200px;
   top: calc(100%);
-  background-color: #f1f1f1;
+  background-color: #7d7554;
   z-index: 2;
-  border-top: 1px solid #d9d9d9;
 }
 
 header .nav-bar .list-group .list-item .sub-menu .sub-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.941);
+  border-top: 1px solid rgba(255, 255, 255, 0.941);
 }
 
 header .nav-bar .list-group .list-item .sub-menu .sub-item a {
@@ -581,7 +595,7 @@ header .nav-bar .list-group .list-item:last-child .sub-menu {
 }
 
 main {
-  border-bottom: 2px solid #e77817;
+  border-bottom: 2px solid #7d7554;
 }
 
 main .cat-top {
@@ -596,66 +610,68 @@ main .cat-top::after {
   clear: both;
 }
 
-main .cat-top .article:first-child {
-  background-color: #f2f2f2;
-  width: 810px;
+main .cat-top .w165 {
+  float: left;
 }
 
-main .cat-top .article:first-child .article-image {
-  width: 480px;
-  margin-right: 20px;
-  margin-bottom: 0px;
+main .cat-top .w165 .article {
+  margin-bottom: 5px;
+  padding-bottom: 0;
+  line-height: 1.12;
 }
 
-main .cat-top .article:first-child .article-image a {
+main .cat-top .w165 .article:first-child .article-image {
+  display: block;
+  width: 100%;
+}
+
+main .cat-top .w165 .article:first-child .article-title {
+  font-weight: bold;
+}
+
+main .cat-top .w165 .article .article-title {
+  font-weight: normal;
+}
+
+main .cat-top .w630 {
+  float: right;
+}
+
+main .cat-top .w630 .article {
+  display: none;
+  width: 100%;
+  border-bottom: none;
+}
+
+main .cat-top .w630 .article:first-child {
   display: block;
 }
 
-main .cat-top .article:first-child .article-image::before {
-  padding-top: 75%;
+main .cat-top .w630 .article:first-child .article-image {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-main .cat-top .article:first-child .article-info {
-  width: 310px;
-  padding: 20px 20px 20px 0px;
+main .cat-top .w630 .article:first-child .article-image a {
+  display: block;
 }
 
-main .cat-top .article:first-child .article-info .article-title a {
+main .cat-top .w630 .article:first-child .article-info {
+  width: 100%;
+}
+
+main .cat-top .w630 .article:first-child .article-info .article-title a {
   font-size: 26px;
 }
 
-main .cat-top .article:first-child .article-info .article-desc {
+main .cat-top .w630 .article:first-child .article-info .article-desc {
+  display: block;
   margin-top: 20px;
   display: block;
 }
 
-main .cat-top .article:first-child .article-info .article-detail {
+main .cat-top .w630 .article:first-child .article-info .article-links {
   display: block;
-}
-
-main .cat-top .article {
-  width: calc((100% - 2*20px) / 3);
-  margin-bottom: 20px;
-  margin-right: 19.9px;
-  border-bottom: none;
-  padding-bottom: 0px;
-  margin-top: 0px;
-}
-
-main .cat-top .article .article-image {
-  width: 100%;
-}
-
-main .cat-top .article .article-desc {
-  display: none;
-}
-
-main .cat-top .article .article-detail {
-  display: none;
-}
-
-main .cat-top .article:nth-child(3n+1) {
-  margin-right: 0;
 }
 
 main .cat-heading {
@@ -666,8 +682,8 @@ main .cat-heading h2 {
   display: inline-block;
   padding-right: 20px;
   padding-bottom: 3px;
-  font-size: 26px;
   border-bottom: 1px solid #e77817;
+  font-size: 26px;
 }
 
 main .cat-group .article-list {
@@ -700,115 +716,73 @@ main .cat-group .article-list .article:last-child {
   border-bottom: none;
 }
 
-main .cat-group .cat-focus .article .article-image {
+main .cat-group .cat-financial-life .article .article-image {
   width: 70px;
 }
 
-main .cat-group .cat-focus .article .article-info {
+main .cat-group .cat-financial-life .article .article-image::before {
+  padding-top: 100%;
+}
+
+main .cat-group .cat-financial-life .article .article-info {
   width: 215px;
 }
 
-main .cat-group .cat-focus .article:first-child .article-image {
+main .cat-group .cat-financial-life .article:first-child .article-image {
   width: 100%;
 }
 
-main .cat-group .cat-focus .article:first-child .article-image::before {
+main .cat-group .cat-financial-life .article:first-child .article-image::before {
   padding-top: 56.25%;
 }
 
-main .cat-group .cat-focus .article:first-child .article-info {
+main .cat-group .cat-financial-life .article:first-child .article-info {
   width: 100%;
 }
 
-main .cat-group .cat-focus .article:first-child .article-info a {
+main .cat-group .cat-financial-life .article:first-child .article-info a {
   font-size: 16px;
 }
 
-main .cat-group .cat-investment .article .article-image {
+main .cat-group .cat-smart-investment .article .article-image {
   display: none;
 }
 
-main .cat-group .cat-investment .article .article-info {
+main .cat-group .cat-smart-investment .article .article-info {
   width: 100%;
 }
 
-main .cat-group .cat-investment .article .article-desc {
+main .cat-group .cat-smart-investment .article .article-desc {
   display: none;
 }
 
-main .cat-group .cat-investment .article:first-child .article-image {
+main .cat-group .cat-smart-investment .article:first-child .article-image {
   display: block;
   width: 100%;
 }
 
-main .cat-group .cat-investment .article:first-child .article-image::before {
+main .cat-group .cat-smart-investment .article:first-child .article-image::before {
   padding-top: 56.25%;
 }
 
-main .cat-group .cat-investment .article:first-child .article-info {
+main .cat-group .cat-smart-investment .article:first-child .article-info {
   width: 100%;
 }
 
-main .cat-group .cat-investment .article:first-child .article-info a {
+main .cat-group .cat-smart-investment .article:first-child .article-info a {
   font-size: 16px;
 }
 
-main .cat-group .cat-investment .article:first-child .article-info .article-desc {
+main .cat-group .cat-smart-investment .article:first-child .article-info .article-desc {
   display: block;
 }
 
-main .cat-expert {
-  margin-bottom: 20px;
-}
-
-main .cat-expert .article-list .article {
-  float: right;
-  width: 300px;
-}
-
-main .cat-expert .article-list .article .article-image {
-  display: none;
-}
-
-main .cat-expert .article-list .article:first-child {
+main .w495 {
   float: left;
-  width: 495px;
-  margin-top: 0;
 }
 
-main .cat-expert .article-list .article:first-child .article-image {
-  display: block;
-  width: 100%;
-}
-
-main .cat-expert .article-list .article:first-child .article-image::before {
-  padding-top: 70%;
-}
-
-main .cat-expert .article-list .article:first-child .article-title {
-  margin-top: 10px;
-}
-
-main .cat-expert .article-list .article:first-child .article-title a {
-  font-size: 20px;
-}
-
-main .cat-expert .article-list .article:nth-child(2) {
-  margin-top: 0;
-}
-
-main .cat-expert .article-list .article:nth-child(2) .article-image {
-  display: block;
-  width: 70px;
-}
-
-main .cat-expert .article-list .article:nth-child(2) .article-info {
-  width: 215px;
+main .w300 {
   float: right;
-}
-
-main .cat-expert .article-list .article:first-child, main .cat-expert .article-list .article:last-child {
-  border-bottom: none;
 }
 
 main .main-bottom {
@@ -818,11 +792,12 @@ main .main-bottom {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
-main .cat-money, main .cat-startup {
-  width: 395px;
-  margin-bottom: 25px;
+main .main-bottom .w495, main .main-bottom .w300 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -832,47 +807,68 @@ main .cat-money, main .cat-startup {
           flex-direction: column;
 }
 
-main .cat-money .cat-heading, main .cat-startup .cat-heading {
-  text-transform: uppercase;
+main .main-bottom .cat-ecomerce, main .main-bottom .cat-new-policy {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-main .cat-money .cat-heading h2, main .cat-startup .cat-heading h2 {
-  font-size: 18px;
-}
-
-main .cat-money .article-list, main .cat-startup .article-list {
-  background-color: #f2f2f2;
-  padding: 0px 20px 0px;
+main .main-bottom .cat-ecomerce .article-list, main .main-bottom .cat-new-policy .article-list {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-main .cat-money .article-list .article .article-image, main .cat-startup .article-list .article .article-image {
-  display: none;
-  margin: 0px -20px;
+main .cat-ecomerce, main .cat-derivative-bonds, main .cat-currency, main .cat-new-policy {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
-main .cat-money .article-list .article:last-child, main .cat-startup .article-list .article:last-child {
+main .cat-ecomerce .article-list, main .cat-derivative-bonds .article-list, main .cat-currency .article-list, main .cat-new-policy .article-list {
+  background-color: #f9f9f9;
+  padding: 0px 20px;
+}
+
+main .cat-ecomerce .article-list .article, main .cat-derivative-bonds .article-list .article, main .cat-currency .article-list .article, main .cat-new-policy .article-list .article {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+main .cat-ecomerce .article-list .article .article-image, main .cat-derivative-bonds .article-list .article .article-image, main .cat-currency .article-list .article .article-image, main .cat-new-policy .article-list .article .article-image {
+  display: none;
+  margin-bottom: 10px;
+}
+
+main .cat-ecomerce .article-list .article .article-title, main .cat-derivative-bonds .article-list .article .article-title, main .cat-currency .article-list .article .article-title, main .cat-new-policy .article-list .article .article-title {
+  margin-bottom: 10px;
+}
+
+main .cat-ecomerce .article-list .article:last-child, main .cat-derivative-bonds .article-list .article:last-child, main .cat-currency .article-list .article:last-child, main .cat-new-policy .article-list .article:last-child {
   border-bottom: none;
 }
 
-main .cat-money .article:first-child, main .cat-startup .article:first-child {
+main .cat-ecomerce .article:first-child, main .cat-derivative-bonds .article:first-child, main .cat-currency .article:first-child, main .cat-new-policy .article:first-child {
   margin-top: 0px;
 }
 
-main .cat-money .article:first-child .article-image, main .cat-startup .article:first-child .article-image {
+main .cat-ecomerce .article:first-child .article-image, main .cat-derivative-bonds .article:first-child .article-image, main .cat-currency .article:first-child .article-image, main .cat-new-policy .article:first-child .article-image {
   display: block;
-  width: 395px;
-  height: 265px;
-  margin-bottom: 20px;
+  width: calc(100% + 40px);
+  margin-left: -20px;
 }
 
-main .cat-money .article:first-child .article-title a, main .cat-startup .article:first-child .article-title a {
+main .cat-ecomerce .article:first-child .article-title a, main .cat-derivative-bonds .article:first-child .article-title a, main .cat-currency .article:first-child .article-title a, main .cat-new-policy .article:first-child .article-title a {
   font-size: 18px;
 }
 
-main .cat-money .article:first-child .article-desc, main .cat-startup .article:first-child .article-desc {
+main .cat-ecomerce .article:first-child .article-desc, main .cat-derivative-bonds .article:first-child .article-desc, main .cat-currency .article:first-child .article-desc, main .cat-new-policy .article:first-child .article-desc {
   display: block;
 }
 
@@ -886,18 +882,6 @@ main .cat-mostview .article-list .article .article-info {
   width: 210px;
 }
 
-main .cat-ma .article:first-child .article-image {
-  width: 100%;
-}
-
-main .cat-ma .article:first-child .article-title a {
-  font-size: 18px;
-}
-
-main .cat-ma .article-info .article-desc {
-  display: block;
-}
-
 footer .site-info {
   background-color: #f2f2f2;
   padding-bottom: 15px;
@@ -906,12 +890,8 @@ footer .site-info {
 footer .logo {
   float: left;
   margin-right: 35px;
-  margin-top: 15px;
-}
-
-footer .logo img {
-  width: 160px;
-  height: 80px;
+  margin-top: 25px;
+  width: 200px;
 }
 
 footer .copyright {
@@ -956,44 +936,37 @@ footer .col-rt .social-link .icon img {
   height: 21px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.5;
 }
 
 footer .col-rt .social-link .icon img:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
+  opacity: 1;
 }
 
-footer .col-rt .logo-group .logo-ktck {
+footer .col-rt .logo-group .logo-1 {
   float: left;
   margin-top: 15px;
   width: 100%;
 }
 
-footer .col-rt .logo-group .logo-ktck img {
+footer .col-rt .logo-group .logo-1 img {
   width: 146px;
-  height: 60px;
 }
 
-footer .col-rt .logo-group .logo-tttc {
+footer .col-rt .logo-group .logo-2 {
   float: left;
-  margin-top: 15px;
+  margin-top: 8px;
+  width: 95px;
 }
 
-footer .col-rt .logo-group .logo-tttc img {
-  width: 155px;
-  height: 23px;
-}
-
-footer .col-rt .logo-group .logo-dnny {
+footer .col-rt .logo-group .logo-3 {
   float: right;
-  margin-top: 6px;
-}
-
-footer .col-rt .logo-group .logo-dnny img {
-  width: 155px;
-  height: 40px;
+  margin-top: 12px;
+  width: 210px;
 }
 
 footer .mastercms {
@@ -1100,7 +1073,7 @@ footer .mastercms a {
 }
 
 .paging .current {
-  background-color: #f7941d;
+  background-color: #7d7554;
 }
 
 .breadcrumb {
@@ -1115,7 +1088,7 @@ footer .mastercms a {
 }
 
 .breadcrumb li a {
-  color: #f7941d;
+  color: #7d7554;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -1222,7 +1195,7 @@ footer .mastercms a {
   padding: 8px 25px;
   border-radius: 2px;
   font-weight: bold;
-  background-color: #4386c3;
+  background-color: #0079e2;
   float: right;
   color: white;
 }
@@ -1264,6 +1237,6 @@ a.btn-viewmore {
   padding: 5px 10px;
   font-weight: bold;
   float: right;
-  color: #4386c3;
+  color: #0079e2;
 }
 /*# sourceMappingURL=style.css.map */

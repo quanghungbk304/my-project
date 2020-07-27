@@ -561,9 +561,11 @@ header .nav-bar .list-group .list-item:first-child a {
   padding: 0px 10px;
 }
 
-header .nav-bar .list-group .list-item:first-child i {
-  font-size: 25px;
-  line-height: 38px;
+header .nav-bar .list-group .list-item:first-child img {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: -2px;
 }
 
 header .nav-bar .list-group .list-item:last-child {
@@ -573,7 +575,7 @@ header .nav-bar .list-group .list-item:last-child {
 header .nav-bar .list-group .list-item:last-child img {
   width: 36px;
   height: 9px;
-  margin-top: 10px;
+  display: inline-block;
 }
 
 header .nav-bar .list-group .list-item:last-child .sub-menu {
@@ -814,9 +816,25 @@ main .cat-business .article-list .article:first-child, main .cat-business .artic
   border-bottom: none;
 }
 
+main .main-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 main .cat-capital-flow, main .cat-management {
   width: 395px;
   margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .cat-capital-flow .cat-heading, main .cat-management .cat-heading {
@@ -829,8 +847,10 @@ main .cat-capital-flow .cat-heading h2, main .cat-management .cat-heading h2 {
 
 main .cat-capital-flow .article-list, main .cat-management .article-list {
   background-color: #f2f2f2;
-  height: 575px;
   padding: 0px 20px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 main .cat-capital-flow .article-list .article .article-image, main .cat-management .article-list .article .article-image {
@@ -928,13 +948,24 @@ footer .col-rt .social-link {
   text-align: right;
 }
 
-footer .col-rt .social-link i {
-  font-size: 21px;
-  color: #a9a9a9;
+footer .col-rt .social-link .icon {
+  display: inline-block;
 }
 
-footer .col-rt .social-link i:hover {
-  color: #00755c;
+footer .col-rt .social-link .icon img {
+  width: 21px;
+  height: 21px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.5;
+}
+
+footer .col-rt .social-link .icon img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  opacity: 1;
 }
 
 footer .col-rt .logo-group .logo-1 {
